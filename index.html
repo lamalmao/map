@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=58783ff3-d800-4810-b31d-c407c653b6ad&lang=ru_RU" type="text/javascript"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;1,400;1,600&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Poiret+One&display=swap" rel="stylesheet"> 
+  <title>Карта</title>
+</head>
+<body>
+  <div class="content">
+    <div class="logo">Тут будет какой-то там логотип</div>
+    <div class="container menu">
+      <div class="menu-item menu-header">
+        <h1 class="text header header">Метки</h1>
+      </div>
+      <div class="menu-item">
+        <ul class="points-list" id="menu">
+          <li class="points-item" onclick="reset()">Назад</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container map-container">
+      <div id="map" style="width: 100%;"></div>
+    </div>
+    <div id="location-about">
+      <div id="about-close">&#10006;</div>
+      <div id="location-data"></div>
+    </div>
+    <div class="mobile-back container" onclick="reset()">Назад</div>
+    <div class="adverb container">
+      <div class="ad-container">
+        <h1 class="header">Место для вашей рекламы</h1>
+      </div>
+      <div class="ad-container">
+        <h1 class="header">Место для вашей рекламы</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
