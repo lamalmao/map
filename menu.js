@@ -188,7 +188,7 @@ var Menu = /** @class */ (function () {
         var _loop_1 = function (item) {
             if (!item.showInMenu)
                 return "continue";
-            var menuItem = Menu.createButton(item.shortName, classStyle, function () {
+            var menuItem = Menu.createButton(item.shortName.toLocaleUpperCase(), classStyle, function () {
                 instance._informationWindow.point = item;
                 instance._informationWindow.visible = true;
                 instance.moveTo(item.location.location);
@@ -210,9 +210,10 @@ var Menu = /** @class */ (function () {
             finally { if (e_3) throw e_3.error; }
         }
         if (this.backButton) {
-            var backButton = Menu.createButton('Назад', classStyle, function () {
+            var backButton = Menu.createButton('НАЗАД', classStyle, function () {
                 instance.close();
             });
+            backButton.setAttribute('style', 'text-align: center; padding: 0; font-size: 1.3em');
             this._itemsMenuElement.appendChild(backButton);
         }
     };
@@ -222,7 +223,7 @@ var Menu = /** @class */ (function () {
         var instance = this;
         var _loop_2 = function (categoryIndex) {
             var category = this_2._categories[categoryIndex];
-            var categoryListItem = Menu.createButton(category.name, 'menu-category-item', function () {
+            var categoryListItem = Menu.createButton(category.name.toLocaleUpperCase(), 'menu-category-item', function () {
                 instance._informationWindow.visible = false;
                 instance.cursor = categoryIndex;
                 instance._map.reset(category.center ? category.center : undefined);
@@ -596,7 +597,7 @@ var tours = [
             'Телефон: 8 (800) 350-12-98, +7 (863) 461-91-71, +7 (903) 400-04-54',
             'Email: info@biohutor.ru'
         ], new Color(126, 28, 48, 0.5), Point.IconsColors.red),
-        new Point('Неизвестный Дон', 'Неизвестный Дон', new PointLocation(47.218394, 39.724346, '344006, г. Ростов-на-Дону, ул. Седова, 5, оф. М15'), [
+        new Point('Неизвестный Дон', 'Неизвестный Дон', new PointLocation(47.217904630773226, 39.72203370997485, '344006, г. Ростов-на-Дону, ул. Седова, 5, оф. М15'), [
             new Link('https://tours.unknown-don.ru/', 'Неизвестный Дон'),
             new Link('https://vk.com/unknown_don', 'ВКонтакте'),
             new Link('https://rostov.aif.ru/society/persona/brend_dlya_turistov_priroda_rostovskoy_oblasti_unikalna?ysclid=lb9n9nayer168247993', 'АиФ Ростов-на-Дону - Неизвестный Дон'),
