@@ -5,7 +5,7 @@
 }
 
 * {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +26,7 @@ body {
   /* height: 150%; */
   display: block;
   position: relative;
-  font-family: 'Ubuntu', sans-serif !important;
+  font-family: "Ubuntu", sans-serif !important;
 }
 
 .container {
@@ -91,7 +91,7 @@ body {
   display: block;
   position: relative;
   width: 115px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   bottom: 4px;
   color: rgb(25, 38, 95);
   left: 5px;
@@ -100,7 +100,7 @@ body {
 /* Точки */
 
 .menu-point-item {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1em;
@@ -110,9 +110,9 @@ body {
   line-height: 33px;
   box-sizing: border-box;
   margin-bottom: 5px;
-  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(166,153,166,1);
-  -moz-box-shadow: inset 0px 0px 3px 1px rgba(166,153,166,1);
-  box-shadow: inset 0px 0px 3px 1px rgba(166,153,166,1);
+  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(166, 153, 166, 1);
+  -moz-box-shadow: inset 0px 0px 3px 1px rgba(166, 153, 166, 1);
+  box-shadow: inset 0px 0px 3px 1px rgba(166, 153, 166, 1);
   background-color: #ad140f;
   border-radius: 3px;
   cursor: pointer;
@@ -127,11 +127,15 @@ body {
   color: #006363;
 }
 
+#itemsMenu {
+  overflow: scroll;
+  max-height: 300px;
+}
+
 /*.menu-point-item:first-child {
   background-color: rgba(255, 229, 0, 0.7);
   color: #26458A;
 }*/
-
 /*.menu-point-item:first-child:hover {
   background-color: rgb(87, 20, 20);
   color: rgba(212, 208, 208, 0.897)
@@ -155,11 +159,11 @@ body {
 
 .menu-category-item:hover {
   background-color: #293030;
-  color:rgb(136, 221, 193);
+  color: rgb(136, 221, 193);
 }
 
 .menu-category-item:checked {
-  background-color: #26458A;
+  background-color: #26458a;
 }
 
 /* Текст */
@@ -174,13 +178,13 @@ body {
 }
 
 .header {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 1.8em;
   font-weight: bold;
   margin-bottom: 0.2em;
   text-indent: 0;
   /*color: rgb(25, 23, 126);*/
-  color:  #3e92d2 !important;
+  color: #3e92d2 !important;
   text-align: center;
 }
 
@@ -189,28 +193,30 @@ body {
   position: absolute;
   width: 600px;
   height: fit-content;
-  background-color: #FFC440 !important;
+  background-color: #ffc440 !important;
   border-radius: 15px;
   padding: 10px 15px;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(173,155,173,0.69);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(173,155,173,0.69);
-  box-shadow: 2px 2px 5px 0px rgba(173,155,173,0.69);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(173, 155, 173, 0.69);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(173, 155, 173, 0.69);
+  box-shadow: 2px 2px 5px 0px rgba(173, 155, 173, 0.69);
   top: 50px;
   right: 250px;
   transition: 0.2s ease-in-out;
 }
 
-#location-about:hover{
+#location-about:hover {
   background-color: rgb(96, 153, 153, 1);
 }
 
-#location-about p, h1, a {
+#location-about p,
+h1,
+a {
   /* color: #218585 !important; */
-  color: #3A55AD !important;
+  color: #3a55ad !important;
   /* color: rgb(49, 27, 27); */
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1em;
-  font-size: 1em  ;
+  font-size: 1em;
 }
 
 #location-about p.article-address {
@@ -218,13 +224,13 @@ body {
   margin-top: 10px;
   font-size: 0.9em;
   font-style: italic;
-} 
+}
 
 #location-about h1 {
   margin-bottom: 20px;
   font-size: 1.1em;
   font-weight: bold;
-  border-bottom: 1px solid #3A55AD;
+  border-bottom: 1px solid #3a55ad;
 }
 
 .article-text {
@@ -241,7 +247,7 @@ body {
   top: 11px;
   display: block;
   user-select: none;
-  color: #3A55AD;
+  color: #3a55ad;
   font-weight: bold;
 }
 
@@ -257,7 +263,7 @@ body {
   /* border-bottom: 1px solid #218585; */
   border-bottom: 1px solid #293030;
   line-height: 1.25em;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .about-address {
@@ -288,7 +294,6 @@ body {
   /* background-color: rgba(154, 167, 163, 0.212); */
   background-color: rgba(201, 16, 16, 0.356);
 }
-
 
 .ad-container {
   display: flex;
@@ -330,13 +335,13 @@ body {
   text-align: center;
   font-size: 1.3em;
   line-height: 40px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   color: rgb(20, 32, 46);
   transition: ease-in-out 0.15s;
 }
 
 .mobile-back:active {
-  background: rgb(146,191,164);
+  background: rgb(146, 191, 164);
   /* background: radial-gradient(circle, rgba(146,191,164,0.7413165949973739) 0%, rgba(147,166,159,0.5872549703475141) 33%, rgba(143,189,237,0.48361351376488093) 75%, rgba(149,156,155,0.3043418050814075) 100%); */
 }
 
@@ -345,7 +350,7 @@ body {
   top: -11.25%;
   left: 3%;
   font-size: 2em;
-  font-family: 'Poiret One';
+  font-family: "Poiret One";
   font-weight: 500;
 }
 
@@ -399,7 +404,7 @@ body {
   }
 }
 
-@media screen and (max-width:  1560px) {
+@media screen and (max-width: 1560px) {
   .menu {
     font-size: 70% !important;
   }
