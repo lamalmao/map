@@ -70,7 +70,6 @@ body {
 .socials {
   display: block;
   position: absolute;
-  vertical-align: bottom;
   bottom: 1%;
   width: inherit;
 }
@@ -130,6 +129,35 @@ body {
 #itemsMenu {
   overflow: scroll;
   max-height: 300px;
+}
+
+.search-form {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 12.5%;
+  z-index: 1;
+  /* left: -5px; */
+  /* display: inline-block; */
+  height: 35px;
+  width: 20%;
+  font-family: "Merriweather", serif;
+}
+
+.search-button {
+  height: 35px;
+  /* display: inline-block; */
+  /* margin-top: 5px; */
+}
+
+.search-field {
+  width: 80%;
+  padding: 12px 20px;
+  margin-right: 2%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 /*.menu-point-item:first-child {
